@@ -1,3 +1,65 @@
+/* src/index.css */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* NEON TEXT EFFECT */
+.neon-text {
+  font-family: 'Orbitron', sans-serif;
+  text-shadow:
+    0 0 5px #0ff,
+    0 0 10px #0ff,
+    0 0 20px #0ff,
+    0 0 40px #0ff;
+  color: #00ffff;
+}
+
+/* BACKGROUND */
+body {
+  background: radial-gradient(circle at top left, #000000 0%, #05050a 100%);
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  overflow-x: hidden;
+}
+
+/* SCROLLBAR GLOW (optional) */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #00ffe1, #00bfff);
+  border-radius: 4px;
+}
+
+/* FORM GLOW */
+input,
+button {
+  transition: all 0.2s ease-in-out;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+}
+
+button:hover {
+  box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+}
+
+/* index.css */
+.neon-button {
+  background-color: black;
+  color: #00ffff;
+  border: 1px solid #00ffff;
+  padding: 0.75rem;
+  border-radius: 12px;
+  text-shadow: 0 0 5px #00ffff;
+  box-shadow: 0 0 5px #00ffff;
+  transition: 0.3s ease-in-out;
+}
+
+.neon-button:hover {
+  background-color: #001111;
+  box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+}
